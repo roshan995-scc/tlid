@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://i.pinimg.com/564x/88/42/2f/88422fe88ee80e661e1ba10e3a5e4966.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-size: 0.8rem;
+}
+
+
+/* Main Container Styling */
+.container {
+    text-align: center;
+    background-color: rgba(245, 215, 152, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+    backdrop-filter: blur(5px); 
+}
+
+/* About Container Styling */
+.about-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+/* Main Heading Styling */
+.main-heading {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #4a4a4a;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+    animation: slideIn 1s ease-out;
+}
+
+/* About Heading Styling */
+.about-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #4a4a4a;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+/* About Text Styling */
+.about-text {
+    font-size: 1.0rem;
+    margin: 20px 0;
+}
+
+/* Buttons for Chapters */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #cf832b, #ca7a12);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #d65d0c77, #ff7f5fcc);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Social Media Buttons */
+.socials {
+    margin: 20px 0;
+}
+
+.social-btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    background: #0077b5; /* LinkedIn Color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+.social-btn:hover {
+    background: #005582; /* Darker LinkedIn Color */
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.back-btn:hover {
+    background: rgba(212, 100, 8, 0.685);
+    transform: scale(1.05);
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2.8rem;
+    }
+
+    .about-heading {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
